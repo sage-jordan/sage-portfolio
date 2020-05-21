@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Header, Button, Icon, Segment, Grid, Divider, Image, Responsive } from 'semantic-ui-react'
+import img from './assets/teal/undraw_weather.png'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
     return (
@@ -8,7 +10,7 @@ const Nav = () => {
                 <Grid columns={2} stretched relaxed='very' stackable>
                     <Grid.Column>
                         <Header as='h2' color='teal'>
-                            <Image circular src='https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/99425826_2711986479077934_5779544135094501376_n.jpg?_nc_cat=100&_nc_sid=730e14&_nc_oc=AQlsCvYgyQeFkzwd4IIVjELfvHFlNNAdUDY9xJ3dEBGCuFm-g0g4KugbSg7MGwKeSRxUYdZkoQ0Z-jItLZPfrwKr&_nc_ht=scontent-ort2-2.xx&oh=0690c542b78842dc7e1532dd6dbef624&oe=5EED583A' />
+                            <Image src={img} size='massive' />
                             Sage Jordan
                         </Header>
                         <Responsive as={Divider} horizontal maxWidth={768}>
@@ -23,25 +25,25 @@ const Nav = () => {
                     </Grid.Column>
                     <Grid.Row >
                         <Grid.Column width={4}>
-                            <Button basic color='teal'>
+                            <Button basic color='teal' as={Link} to="/">
                                 <Icon name='home' color='teal' />
                                 Home
                             </Button>
                         </Grid.Column>
                         <Grid.Column width={4}>
-                            <Button basic color='teal'>
+                            <Button basic color='teal' as={Link} to="/resume">
                                 <Icon name='address card outline' />
                                 Resume
                             </Button>
                         </Grid.Column>
                         <Grid.Column width={4}>
-                            <Button basic color='teal'>
+                            <Button basic color='teal' as={Link} to="/projects">
                                 <Icon name='code' />
                                 Projects
                             </Button>
                         </Grid.Column>
                         <Grid.Column width={4}>
-                            <Button basic color='teal'>
+                            <Button basic color='teal' as={Link} to="/contact">
                                 <Icon name='phone' />
                                 Contact
                             </Button>
