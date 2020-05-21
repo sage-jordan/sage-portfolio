@@ -7,7 +7,7 @@ import { Route } from 'react-router-dom';
 import Nav from './Nav';
 import Resume from './Resume';
 import Home from './Home';
-import Projects from './Projects/Projects';
+import Projects from './Projects';
 import Contact from './Contact';
 
 function App() {
