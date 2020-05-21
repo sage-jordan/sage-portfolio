@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from './Nav';
-import ReactDOM from 'react-dom'
 import './App.css';
 
 function App() {
