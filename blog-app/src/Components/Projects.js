@@ -25,6 +25,22 @@ const Projects = () => {
                     />
                     <Card
                         color='teal'
+                        image={nasa}
+                        header='NASA Astronomy Photo Of The Day'
+                        meta={<a href='https://github.com/sage-jordan/nasa-photo-of-the-day'>GitHub Repository</a>}
+                        description='Module Project: Component Side Effects. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.'
+                        extra={<a href='https://nasaphotooftheday.now.sh/'>https://nasaphotooftheday.now.sh/</a>}
+                    />
+                    <Card
+                        color='teal'
+                        image={shoppingCart}
+                        header='Shopping Cart'
+                        meta={<a href='https://github.com/sage-jordan/react-shopping-cart'>GitHub Repository</a>}
+                        description='Module Project: Context API. Add and Remove functionality to Cart Context.'
+                        extra={<a href='https://react-shopping-cart-alpha.now.sh/'>https://react-shopping-cart-alpha.now.sh/</a>}
+                    />
+                    <Card
+                        color='teal'
                         image={carSales}
                         header='Car Sales'
                         meta={<a href='https://github.com/sage-jordan/Car-Sales'>GitHub Repository</a>}
@@ -41,27 +57,11 @@ const Projects = () => {
                     />
                     <Card
                         color='teal'
-                        image={shoppingCart}
-                        header='Shopping Cart'
-                        meta={<a href='https://github.com/sage-jordan/react-shopping-cart'>GitHub Repository</a>}
-                        description='Module Project: Context API. Add and Remove functionality to Cart Context.'
-                        extra={<a href='https://react-shopping-cart-alpha.now.sh/'>https://react-shopping-cart-alpha.now.sh/</a>}
-                    />
-                    <Card
-                        color='teal'
                         image={darkMode}
                         header='Dark Mode'
                         meta={<a href='https://github.com/sage-jordan/dark-mode'>GitHub Repository</a>}
                         description='Module Project: Composing Stateful Logic. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.'
                         extra={<a href='https://dark-mode.sagemjordan.now.sh/'>https://dark-mode.sagemjordan.now.sh/</a>}
-                    />
-                    <Card
-                        color='teal'
-                        image={nasa}
-                        header='NASA Astronomy Photo Of The Day'
-                        meta={<a href='https://github.com/sage-jordan/nasa-photo-of-the-day'>GitHub Repository</a>}
-                        description='Module Project: Component Side Effects. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.'
-                        extra={<a href='https://nasaphotooftheday.now.sh/'>https://nasaphotooftheday.now.sh/</a>}
                     />
                 </Card.Group>
             </Segment>
