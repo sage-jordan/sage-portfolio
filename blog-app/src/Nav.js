@@ -31,7 +31,7 @@ const Nav = () => {
                         <Grid.Column width={4}>
                             <Button basic color='teal'>
                                 <Icon name='address card outline' />
-                                About
+                                Resume
                             </Button>
                         </Grid.Column>
                         <Grid.Column width={4}>
