@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Header, Button, Icon, Segment, Grid, Divider, Image, Responsive } from 'semantic-ui-react'
-import img from './assets/teal/undraw_weather.png'
+import img from '../assets/teal/undraw_weather.png'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {

@@ -1,13 +1,13 @@
 // Import Dependencies
 import React from 'react';
-import './App.css';
+import '../App.css';
 import { Route } from 'react-router-dom';
 
 // Import Components
 import Nav from './Nav';
 import Resume from './Resume';
 import Home from './Home';
-import Projects from './Projects';
+import Projects from './Projects/Projects';
 import Contact from './Contact';
 
 function App() {

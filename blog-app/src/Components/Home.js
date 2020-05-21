@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import { Segment, Image, Grid, GridColumn, Header, Container, Responsive } from 'semantic-ui-react';
 
 // Import Images
-import onlineResume from './assets/teal/undraw_online_resume.png';
-import journey from './assets/teal/undraw_journey.png';
-import escaping from './assets/teal/undraw_escaping.png';
+import onlineResume from '../assets/teal/undraw_online_resume.png';
+import journey from '../assets/teal/undraw_journey.png';
+import escaping from '../assets/teal/undraw_escaping.png';
 
 
 const Home = () => {

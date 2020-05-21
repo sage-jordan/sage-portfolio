@@ -1,6 +1,6 @@
 import React from 'react';
 import { Segment, Image, Container } from 'semantic-ui-react'
-import pdf from './assets/resume1.png'
+import pdf from '../assets/resume1.png'
 
 const Resume = () => {
 
