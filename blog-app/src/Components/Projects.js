@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Segment, Card } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import ProjectData from './ProjectData';
 
 // Import Images
 import sage from '../assets/proj/sage-jordan.png'
@@ -15,7 +16,19 @@ const Projects = () => {
         <Container>
             <Segment color='teal' padded='very'>
                 <Card.Group centered >
-                    <Card
+                    {ProjectData.map(({ image, header, meta, description, extra }) => {
+                        return (
+                            <Card
+                                color='teal'
+                                image={sage}
+                                header={header}
+                                meta={meta}
+                                description={description}
+                                extra={extra}
+                            />
+                        )
+                    })}
+                    {/* <Card
                         color='teal'
                         image={sage}
                         header='Template Portfolio'
@@ -62,7 +75,7 @@ const Projects = () => {
                         meta={<a href='https://github.com/sage-jordan/dark-mode'>GitHub Repository</a>}
                         description='Module Project: Composing Stateful Logic. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.'
                         extra={<a href='https://dark-mode.sagemjordan.now.sh/'>https://dark-mode.sagemjordan.now.sh/</a>}
-                    />
+                    /> */}
                 </Card.Group>
             </Segment>
         </Container >
