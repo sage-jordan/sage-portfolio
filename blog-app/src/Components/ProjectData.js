@@ -23,7 +23,7 @@ const ProjectData = [
         header: 'Design Your Life',
         meta: <a href='https://github.com/Design-YourLife/FE-design-YourLife'>GitHub Repository</a>,
         description: 'Build Week: Design Your Life prompt. Worked on a team of 5, using Reactjs, Moment, Axios, React-Router-Dom, and Bootstrap. Login/Register functionality. React app talks to backend; CRUD operations on "activities".',
-        extra: <a href='https://design-your-life.now.sh/'>https://design-your-life.now.sh/</a>
+        extra: <a href='https://design-your-life.now.sh/'>design-your-life.now.sh/</a>
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ const ProjectData = [
         header: 'NASA Astronomy Photo Of The Day',
         meta: <a href='https://github.com/sage-jordan/nasa-photo-of-the-day'>GitHub Repository</a>,
         description: 'Module Project: Component Side Effects. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.',
-        extra: <a href='https://nasaphotooftheday.now.sh/'>https://nasaphotooftheday.now.sh/</a>
+        extra: <a href='https://nasaphotooftheday.now.sh/'>nasaphotooftheday.now.sh/</a>
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const ProjectData = [
         header: 'Shopping Cart',
         meta: <a href='https://github.com/sage-jordan/react-shopping-cart'>GitHub Repository</a>,
         description: 'Module Project: Context API. Add and Remove functionality to Cart Context.',
-        extra: <a href='https://react-shopping-cart-alpha.now.sh/'>https://react-shopping-cart-alpha.now.sh/</a>
+        extra: <a href='https://react-shopping-cart-alpha.now.sh/'>react-shopping-cart-alpha.now.sh/</a>
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const ProjectData = [
         header: 'Car Sales',
         meta: <a href='https://github.com/sage-jordan/Car-Sales'>GitHub Repository</a>,
         description: 'Module Project: Redux. This project uses redux to add and remove features from your car, and update the total price accordingly.',
-        extra: <a href='https://car-sales-omega.now.sh/'>https://car-sales-omega.now.sh/</a>
+        extra: <a href='https://car-sales-omega.now.sh/'>car-sales-omega.now.sh/</a>
     },
     {
         id: 6,
@@ -63,7 +63,7 @@ const ProjectData = [
         header: 'Dark Mode',
         meta: <a href='https://github.com/sage-jordan/dark-mode'>GitHub Repository</a>,
         description: 'Module Project: Composing Stateful Logic. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.',
-        extra: <a href='https://dark-mode.sagemjordan.now.sh/'>https://dark-mode.sagemjordan.now.sh/</a>
+        extra: <a href='https://dark-mode.sagemjordan.now.sh/'>dark-mode.sagemjordan.now.sh/</a>
     },
 ]
 
