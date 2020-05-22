@@ -9,8 +9,11 @@ import Resume from './Resume';
 import Home from './Home';
 import Projects from './Projects';
 import Contact from './Contact';
+// import ProjectPage from './ProjectPage';
+import { useHistory } from 'react-router-dom';
 
 function App() {
+  const history = useHistory();
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +22,7 @@ function App() {
         <Route path="/resume" component={Resume} />
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
+        {/* <Route path="/projects/:id" render={() => <ProjectPage />} /> */}
       </header>
     </div>
   );
