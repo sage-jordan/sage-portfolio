@@ -9,6 +9,7 @@ import nasa from '../assets/proj/nasa-potd.png';
 import design from '../assets/proj/design_your_life.png';
 import property from '../assets/proj/property-manager.png';
 import bakery from '../assets/proj/sweet-eats-bakery.png';
+import scoreBoard from '../assets/proj/react-scoreboard.png';
 
 const ProjectData = [
     {
@@ -81,6 +82,14 @@ const ProjectData = [
         meta: <a href='https://github.com/sage-jordan/dark-mode'>GitHub Repository</a>,
         description: 'Module Project: Composing Stateful Logic. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.',
         extra: <a href='https://dark-mode.sagemjordan.now.sh/'>dark-mode.sagemjordan.now.sh</a>
+    },
+    {
+        id: 10,
+        image: scoreBoard,
+        header: 'American Football Scoreboard',
+        meta: <a href='https://github.com/sage-jordan/react-american-football-scoreboard'>GitHub Repository</a>,
+        description: 'Module Project: React Components and Components State. This project uses basic React Components and state manipulation.',
+        extra: <a href='https://react-american-football-scoreboard-rust.now.sh/'>react-american-football-scoreboard-rust.now.sh</a>
     }
 ]
 

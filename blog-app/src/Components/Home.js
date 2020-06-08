@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Segment, Image, Grid, GridColumn, Header, Container, Responsive } from 'semantic-ui-react';
+import Projects from './Projects';
 
 // Import Images
 import onlineResume from '../assets/teal/undraw_online_resume.png';
@@ -87,6 +88,7 @@ const Home = () => {
                     </GridColumn>
                 </Grid>
             </Segment>
+            <Projects />
         </Container >
     )
 }
