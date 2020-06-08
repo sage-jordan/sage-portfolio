@@ -1,5 +1,6 @@
 
 import React from 'react';
+
 import sage from '../assets/proj/sage-jordan.png';
 import carSales from '../assets/proj/car-sales.png';
 import github from '../assets/proj/github-usercards.png';
@@ -10,6 +11,7 @@ import design from '../assets/proj/design_your_life.png';
 import property from '../assets/proj/property-manager.png';
 import bakery from '../assets/proj/sweet-eats-bakery.png';
 import scoreBoard from '../assets/proj/react-scoreboard.png';
+
 
 const ProjectData = [
     {
@@ -86,10 +88,12 @@ const ProjectData = [
     {
         id: 10,
         image: scoreBoard,
+
         header: 'American Football Scoreboard',
         meta: <a href='https://github.com/sage-jordan/react-american-football-scoreboard'>GitHub Repository</a>,
         description: 'Module Project: React Components and Components State. This project uses basic React Components and state manipulation.',
         extra: <a href='https://react-american-football-scoreboard-rust.now.sh/'>react-american-football-scoreboard-rust.now.sh</a>
+
     }
 ]
 
