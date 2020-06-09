@@ -11,6 +11,7 @@ import design from '../assets/proj/design_your_life.png';
 import property from '../assets/proj/property-manager.png';
 import bakery from '../assets/proj/sweet-eats-bakery.png';
 import scoreBoard from '../assets/proj/react-scoreboard.png';
+import insta from '../assets/proj/insta-clone.png'
 
 
 const ProjectData = [
@@ -93,6 +94,16 @@ const ProjectData = [
         meta: <a href='https://github.com/sage-jordan/react-american-football-scoreboard'>GitHub Repository</a>,
         description: 'Module Project: React Components and Components State. This project uses basic React Components and state manipulation.',
         extra: <a href='https://react-american-football-scoreboard-rust.now.sh/'>react-american-football-scoreboard-rust.now.sh</a>
+
+    },
+    {
+        id: 11,
+        image: insta,
+
+        header: 'Instagram Clone',
+        meta: <a href='https://github.com/sage-jordan/React-Components-Insta-Clone-Imported'>GitHub Repository</a>,
+        description: 'Module Project: Composing React Components and Passing Data Via Props. This project uses basic React Components, state manipulation, and props.',
+        extra: <a href='https://react-components-insta-clone-imported.now.sh/'>react-components-insta-clone-imported.now.sh</a>
 
     }
 ]
