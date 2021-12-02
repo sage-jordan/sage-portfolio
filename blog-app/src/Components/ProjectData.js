@@ -17,6 +17,7 @@ import insta from '../assets/proj/insta-clone.png'
 const ProjectData = [
     {
         id: 1,
+        featured: 1,
         image: sage,
         header: 'Template Portfolio',
         meta: <a href='https://github.com/sage-jordan/portfolio-website/tree/master'>GitHub Repository</a>,
@@ -25,15 +26,17 @@ const ProjectData = [
     },
     {
         id: 2,
+        featured: 0,
         image: property,
         header: 'Property Manager',
         meta: <a href='https://github.com/Lambda-School-Labs/pt7-property-manager-be'>GitHub Repository</a>,
         description: 'Labs Project: I worked mainly on back-end development. We had a team of 6 for this 16 week-long greenfield project. Back-end Tech Stack: node, cross-env, bcryptjs, cors, dotenv, express, helmet, jsonwebtoken, knex, pg, sqlite3. npm.',
-        extra: <a href='http://trypropertyplus.com/'>trypropertyplus.com</a>
+        extra: <strike>trypropertyplus.com</strike>
     },
     {
         id: 3,
         image: design,
+        featured: 0,
         header: 'Design Your Life',
         meta: <a href='https://github.com/Design-YourLife/FE-design-YourLife'>GitHub Repository</a>,
         description: 'Build Week: Design Your Life prompt. Worked on a team of 5, using Reactjs, Moment, Axios, React-Router-Dom, and Bootstrap. Login/Register functionality. React app talks to backend; CRUD operations on "activities".',
@@ -42,6 +45,7 @@ const ProjectData = [
     {
         id: 4,
         image: nasa,
+        featured: 1,
         header: 'NASA Astronomy Photo Of The Day',
         meta: <a href='https://github.com/sage-jordan/nasa-photo-of-the-day'>GitHub Repository</a>,
         description: 'Module Project: Component Side Effects. This project basically utilizes custom hooks to save data to localStorage and set dark-mode on the body element.',
@@ -49,6 +53,7 @@ const ProjectData = [
     },
     {
         id: 5,
+        featured: 0,
         image: shoppingCart,
         header: 'Shopping Cart',
         meta: <a href='https://github.com/sage-jordan/react-shopping-cart'>GitHub Repository</a>,
@@ -57,6 +62,7 @@ const ProjectData = [
     },
     {
         id: 6,
+        featured: 1,
         image: carSales,
         header: 'Car Sales',
         meta: <a href='https://github.com/sage-jordan/Car-Sales'>GitHub Repository</a>,
@@ -65,6 +71,7 @@ const ProjectData = [
     },
     {
         id: 7,
+        featured: 0,
         image: bakery,
         header: 'Sweat Eats bakery',
         meta: <a href='https://codepen.io/sjordan21/pen/QPZGaw?editors=1100'>Codepen.io</a>,
@@ -72,6 +79,7 @@ const ProjectData = [
     },
     {
         id: 8,
+        featured: 0,
         image: github,
         header: 'Github UserCard',
         meta: <a href='https://github.com/sage-jordan/React-Github-User-Card'>GitHub Repository</a>,
@@ -80,6 +88,7 @@ const ProjectData = [
     },
     {
         id: 9,
+        featured: 0,
         image: darkMode,
         header: 'Dark Mode',
         meta: <a href='https://github.com/sage-jordan/dark-mode'>GitHub Repository</a>,
@@ -89,7 +98,7 @@ const ProjectData = [
     {
         id: 10,
         image: scoreBoard,
-
+        featured: 0,
         header: 'American Football Scoreboard',
         meta: <a href='https://github.com/sage-jordan/react-american-football-scoreboard'>GitHub Repository</a>,
         description: 'Module Project: React Components and Components State. This project uses basic React Components and state manipulation.',
@@ -99,7 +108,7 @@ const ProjectData = [
     {
         id: 11,
         image: insta,
-
+        featured: 0,
         header: 'Instagram Clone',
         meta: <a href='https://github.com/sage-jordan/React-Components-Insta-Clone-Imported'>GitHub Repository</a>,
         description: 'Module Project: Composing React Components and Passing Data Via Props. This project uses basic React Components, state manipulation, and props.',
