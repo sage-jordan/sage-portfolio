@@ -22,6 +22,8 @@ const Featured = () => {
                                     extra={extra}
                                 />
                             )
+                        } else {
+                            return null;
                         }
                     })}
                 </Card.Group>
