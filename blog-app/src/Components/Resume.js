@@ -7,7 +7,7 @@ const Resume = () => {
         <Container>
             <Segment color='teal' padded='very'>
                 <Segment color='teal'>
-                    <Image src={pdf} fluid />
+                    <Image src={pdf} centered />
                 </Segment>
             </Segment>
         </Container >
