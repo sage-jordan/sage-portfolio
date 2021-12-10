@@ -30,7 +30,8 @@ const Resume = () => {
                             <Header as='h2' color='teal'>
                                 Technical Skills
                             </Header>
-                            <Grid columns={4}> // TODO: needs updated to be more efficient
+                            <Grid columns={4}>
+                                {/* # TODO: needs updated to be more efficient */}
                                 <GridColumn>
                                     <Segment color='teal'>
                                         Python
