@@ -10,7 +10,7 @@ const Nav = () => {
                 <Grid columns={2} stretched relaxed='very' stackable>
                     <Grid.Column>
                         <Header as='h2' color='teal'>
-                            <Image src={img} size='massive' />
+                            <Image src={img} />
                             Sage Jordan
                         </Header>
                         <Responsive as={Divider} horizontal maxWidth={768}>

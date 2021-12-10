@@ -11,20 +11,20 @@ const Projects = () => {
             <Segment>
                 <Header as='h2' color='teal'> Contact me </Header>
                 <p>
-                    <Image src={LinkedIn} size='mini' spaced />
-                    <a href="https://www.linkedin.com/in/sage-jordan" target="_blank">
+                    <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <Image src={LinkedIn} size='mini' spaced />
                         LinkedIn
                     </a>
                 </p>
                 <p>
-                    <Image src={GitHub} size='mini' spaced />
-                    <a href="https://github.com/sage-jordan" target="_blank">
+                    <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <Image src={GitHub} size='mini' spaced />
                         Github
                     </a>
                 </p>
                 <p>
-                    <Image src={Gmail} size='mini' spaced />
-                    <a href="mailto:sagemjordan@gmail.com" target="_blank">
+                    <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{ color: 'black' }}>
+                        <Image src={Gmail} size='mini' spaced style={{ color: 'black' }} />
                         Email
                     </a>
                 </p>
