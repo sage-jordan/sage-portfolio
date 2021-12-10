@@ -40,8 +40,8 @@ const ProjectData = [
         image: property,
         header: 'Property Manager',
         meta: <a href='https://github.com/Lambda-School-Labs/pt7-property-manager-be' target="_blank">GitHub Repository</a>,
-        description: 'Labs Project: I worked mainly on back-end development. We had a team of 6 for this 16 week-long greenfield project. Back-end Tech Stack: node, cross-env, bcryptjs, cors, dotenv, express, helmet, jsonwebtoken, knex, pg, sqlite3. npm.',
-        extra: <strike>trypropertyplus.com</strike>
+        description: 'Labs Project: I worked on back-end API development. We had a team of 6 for this 16 week-long greenfield project. Back-end Tech Stack: node, cross-env, bcryptjs, cors, dotenv, express, helmet, jsonwebtoken, knex, pg, sqlite3. npm.',
+        extra: <a href='https://property-manager-be.herokuapp.com/' target="_blank">property-manager-be.herokuapp.com</a>
     },
     {
         id: 4,
