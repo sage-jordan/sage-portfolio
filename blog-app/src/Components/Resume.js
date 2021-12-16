@@ -4,8 +4,26 @@ import GitHub from '../assets/icons/GitHub-Mark.png';
 import LinkedIn from '../assets/icons/LinkedIn.png';
 import Gmail from '../assets/icons/Gmail.png';
 import img from '../assets/teal/undraw_weather.png'
+import skillData from '../assets/skillArr';
+import ReactHtmlParser from 'react-html-parser';
+const columns = 2;
 
 const Resume = () => {
+    const makeGrid = function (columns, skillArr) {
+        let str = "<div class='ui relaxed stackable rounded grid'>"
+        for (let n = 0; n < skillArr.length; n++) {
+            if ((n + 1) === skillArr.length) {
+                str += `<div class='ui column teal'>${skillArr[n]}</div></div></div>`
+            } else if (n === 0 || !(n % columns)) {
+                str += `<div class='two column row'><div class='ui column'>${skillArr[n]}</div>`
+            } else if (!((n + 1) % columns)) {
+                str += `<div class='ui column teal'>${skillArr[n]}</div></div>`
+            } else {
+                str += `<div class='ui column teal'>${skillArr[n]}</div>`
+            }
+        }
+        return ReactHtmlParser([str])
+    }
     return (
         <Container>
             <Segment color='teal' padded='very'>
@@ -30,85 +48,15 @@ const Resume = () => {
                             <Header as='h2' color='teal'>
                                 Technical Skills
                             </Header>
-                            <Grid columns={4}>
-                                {/* # TODO: needs updated to be more efficient */}
-                                <GridColumn>
-                                    <Segment color='teal'>
-                                        Python
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        Redux
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        CSS
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        SASS
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        LESS
-                                    </Segment>
-                                </GridColumn>
-                                <GridColumn>
-                                    <Segment color='teal'>
-                                        JavaScript
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        ReactJS
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        NodeJS
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        PHP
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        HTML
-                                    </Segment>
-                                </GridColumn>
-                                <GridColumn>
-                                    <Segment color='teal'>
-                                        Salesforce
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        MySQL
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        PostgreSQL
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        Redis
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        Trello, Jira
-                                    </Segment>
-                                </GridColumn>
-                                <GridColumn>
-                                    <Segment color='teal'>
-                                        Docker
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        BitBucket
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        GitHub
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        Git
-                                    </Segment>
-                                    <Segment color='teal'>
-                                        Kafka
-                                    </Segment>
-                                </GridColumn>
-                            </Grid>
+                            {makeGrid(columns, skillData)}
                             <Header as='h2' color='teal'>
                                 Skills
                             </Header>
-                            <Grid columns={2} stretched>
+                            <Grid columns={2} stackable stretched>
                                 <Grid.Column>
                                     <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Agile Methodology</Segment>
                                     <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
-                                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Documentation/Reporting</Segment>
+                                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Documentation Reporting</Segment>
                                 </Grid.Column>
                                 <Grid.Column>
                                     <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Remote work</Segment>
@@ -200,7 +148,6 @@ const Resume = () => {
                     <Responsive as={Divider} vertical minWidth={768}>
                         <Icon name='snowflake' color='teal' />
                     </Responsive>
-                    {/* <Image src={pdf} centered /> */}
                 </Segment>
             </Segment>
         </Container >
