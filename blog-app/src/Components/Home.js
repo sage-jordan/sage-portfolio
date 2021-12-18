@@ -20,13 +20,13 @@ const Home = () => {
                     </GridColumn>
                     <GridColumn verticalAlign='middle'>
                         <Segment color='teal' padded='very'>
-                            <Container textAlign="justified">
+                            <Container textAlign="left">
                                 <Header as='h2' color='teal'>
                                     Welcome to my portfolio!
                                 </Header>
-                                This is a React Application, styled with Semantic-UI. Growing up, computers have always fascinated and challenged me. Learning
-                                how to program has been the most fulfilling career choice! To learn more about the languages I know or am learning,
-                                please navigate over to my <Link to="/resume">Resume</Link> page!
+                                <p>This is a React Application, styled with Semantic-UI. Growing up, computers have always fascinated and challenged me. Learning
+                                    how to program has been the most fulfilling career choice! To learn more about the languages I know or am learning,
+                                    please navigate over to my <Link to="/resume">Resume</Link> page!</p>
                             </Container>
                         </Segment>
                     </GridColumn>
@@ -35,12 +35,12 @@ const Home = () => {
                     <Grid divided columns={2} stackable>
                         <GridColumn verticalAlign='middle'>
                             <Segment color='teal' padded='very'>
-                                <Container textAlign="justified">
+                                <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
                                     </Header>
-                                    I grew up in California, where I lived with my mom, brother, and sister. We moved through lots of cities, but Huntington Beach was the one I
-                                    came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently in Houston, TX.
+                                    <p>I grew up in California where I lived with my mom, brother, and sister. We moved through lots of cities, but Huntington Beach was the one I
+                                        came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX.</p>
                                 </Container>
                             </Segment>
                         </GridColumn>
@@ -56,12 +56,12 @@ const Home = () => {
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
                             <Segment color='teal' padded='very'>
-                                <Container textAlign="justified">
+                                <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
                                     </Header>
-                                    I grew up in California where I lived with my mom, brother, and sister. We moved through lots of cities, but Huntington Beach was the one I
-                                    came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX.
+                                    <p>I grew up in California where I lived with my mom, brother, and sister. We moved through lots of cities, but Huntington Beach was the one I
+                                        came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX.</p>
                                 </Container>
                             </Segment>
                         </GridColumn>
@@ -74,11 +74,11 @@ const Home = () => {
                     </GridColumn>
                     <GridColumn verticalAlign='middle'>
                         <Segment color='teal' padded='very'>
-                            <Container textAlign="justified">
+                            <Container textAlign="left">
                                 <Header as='h2' color='teal'>
                                     Hobbies
                                 </Header>
-                                I enjoy physical health, coding, video games, and philosophy. I value integrity, growth mindset, and kindness.
+                                <p>I enjoy physical health, coding, video games, and philosophy. I value integrity, growth mindset, and kindness.</p>
                             </Container>
                         </Segment>
                     </GridColumn>
