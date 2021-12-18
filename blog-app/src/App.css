@@ -6,3 +6,7 @@
   background-color: #282c34;
   min-height: 100vh;
 }
+
+#top-margin {
+  margin-top: 1rem;
+}
