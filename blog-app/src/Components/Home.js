@@ -1,4 +1,3 @@
-// Import Dependencies & Components
 import React from 'react';
 import Featured from './Featured';
 import HomeContent from './HomeContent';

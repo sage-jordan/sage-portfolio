@@ -1,13 +1,14 @@
-import React from 'react';
-import { Segment, Container, Header, Icon, Grid, Divider, Responsive, Image, GridColumn, Button } from 'semantic-ui-react';
+import React from 'react'
+import { Segment, Container, Header, Icon, Grid, Divider, Responsive, Image, GridColumn, Button } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import GitHub from '../assets/icons/GitHub-Mark.png';
-import LinkedIn from '../assets/icons/LinkedIn.png';
-import Gmail from '../assets/icons/Gmail.png';
+import GitHub from '../assets/icons/GitHub-Mark.png'
+import LinkedIn from '../assets/icons/LinkedIn.png'
+import Gmail from '../assets/icons/Gmail.png'
 import img from '../assets/teal/undraw_weather.png'
-import skillData from '../assets/skillArr';
-import ReactHtmlParser from 'react-html-parser';
-const columns = 2;
+import skillData from '../assets/skillArr'
+import ReactHtmlParser from 'react-html-parser'
+import experienceData from '../assets/experience.js'
+const columns = 2
 
 const Resume = () => {
     const makeGrid = function (columns, skillArr) {
@@ -24,6 +25,24 @@ const Resume = () => {
             }
         }
         return ReactHtmlParser([str])
+    }
+
+    const parseExperience = function (experience) {
+        const display = experience.map(job => {
+            const bullets = job.bullets.map(bullet => (
+                <p><Icon name='star' color='teal' />{bullet}</p>
+            ))
+            return (
+                <Segment color='teal' textAlign='left'>
+                    <Header as='h3' color='teal' textAlign='center'>
+                        {job.headline}
+                    </Header>
+                    <Header as='h5' textAlign='center'>{job.dates}</Header>
+                    {bullets}
+                </Segment>
+            )
+        });
+        return display;
     }
 
     const project1 = "Worked with a team of 7 in Lambda Labs, a 16-week project developed with a ReactJS front-end, NodeJS/Express server, and PostgreSQL/Knex database. We utilized Notion to organize our Product Vision Document, and Trello to manage our daily and weekly goals."
@@ -65,7 +84,7 @@ const Resume = () => {
                             <Header as='h2' color='teal'>
                                 Skills
                             </Header>
-                            <Grid columns={2} stackable stretched>
+                            <Grid columns={2} stackable sretched>
                                 <Grid.Column>
                                     <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Agile Methodology</Segment>
                                     <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
@@ -136,27 +155,8 @@ const Resume = () => {
                             </Segment>
 
                             {/* Experience */}
-                            <Header as='h2' color='teal'>
-                                Experience
-                            </Header>
-                            <Segment color='teal' textAlign='left'>
-                                <Header as='h3' color='teal' textAlign='center'>
-                                    Software Engineer II at Sharpen
-                                </Header>
-                                <Header as='h5' textAlign='center'>Aug. 2020 - Sept. 2021</Header>
-                                <p><Icon name='star' color='teal' />Develop remotely with an agile team to debug, create, and test production-level code</p>
-                                <p><Icon name='star' color='teal' />Program with a user-first mentality</p>
-                            </Segment>
-                            <Segment color='teal' textAlign='left'>
-                                <Header as='h3' color='teal' textAlign='center'>
-                                    Team Lead at Lambda School
-                                </Header>
-                                <Header as='h5' textAlign='center'>Nov. 2019 - Aug. 2020</Header>
-                                <p><Icon name='star' color='teal' />Led a team of 9 students that emulates a real work environment using Agile methodology</p>
-                                <p><Icon name='star' color='teal' />Reviewed student code to provide daily feedback and one-on-one code reviews</p>
-                                <p><Icon name='star' color='teal' />Troubleshooting of web curriculum through slack help channel or code review</p>
-                                <p><Icon name='star' color='teal' />Progressively delivered supplemental lectures on various topics related to software engineering</p>
-                            </Segment>
+                            <Header as='h2' color='teal'>Experience</Header>
+                            {parseExperience(experienceData)}
 
                             {/* Projects */}
                             <Header as='h2' color='teal'>
@@ -208,22 +208,18 @@ const Resume = () => {
                     </Header>
                     {makeGrid(columns, skillData)}
                 </Segment>
-                <Segment color='teal'>
+
+                {/* Skills */}
+                <Segment color='teal' >
                     <Header as='h2' color='teal'>
                         Skills
                     </Header>
-                    <Grid columns={2} stackable stretched>
-                        <Grid.Column>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Agile Methodology</Segment>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Documentation Reporting</Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Remote work</Segment>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Project Management</Segment>
-                            <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />SCRUM</Segment>
-                        </Grid.Column>
-                    </Grid>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Agile Methodology</Segment>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Documentation Reporting</Segment>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Remote work</Segment>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />Project Management</Segment>
+                    <Segment color='teal' textAlign='left'><Icon name='star' color='teal' />SCRUM</Segment>
                 </Segment>
 
                 {/* Education */}
@@ -246,27 +242,8 @@ const Resume = () => {
 
                 {/* Experience */}
                 <Segment color='teal'>
-                    <Header as='h2' color='teal'>
-                        Experience
-                    </Header>
-                    <Segment color='teal' textAlign='left'>
-                        <Header as='h3' color='teal' textAlign='center'>
-                            Software Engineer II at Sharpen
-                        </Header>
-                        <Header as='h5' textAlign='center'>Aug. 2020 - Sept. 2021</Header>
-                        <p><Icon name='star' color='teal' />Develop remotely with an agile team to debug, create, and test production-level code</p>
-                        <p><Icon name='star' color='teal' />Program with a user-first mentality</p>
-                    </Segment>
-                    <Segment color='teal' textAlign='left'>
-                        <Header as='h3' color='teal' textAlign='center'>
-                            Team Lead at Lambda School
-                        </Header>
-                        <Header as='h5' textAlign='center'>Nov. 2019 - Aug. 2020</Header>
-                        <p><Icon name='star' color='teal' />Led a team of 9 students that emulates a real work environment using Agile methodology</p>
-                        <p><Icon name='star' color='teal' />Reviewed student code to provide daily feedback and one-on-one code reviews</p>
-                        <p><Icon name='star' color='teal' />Troubleshooting of web curriculum through slack help channel or code review</p>
-                        <p><Icon name='star' color='teal' />Progressively delivered supplemental lectures on various topics related to software engineering</p>
-                    </Segment>
+                    <Header as='h2' color='teal'>Experience</Header>
+                    {parseExperience(experienceData)}
                 </Segment>
 
                 {/* Projects */}
