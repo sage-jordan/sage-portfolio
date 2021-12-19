@@ -11,6 +11,8 @@ import experienceData from '../assets/experience.js'
 const columns = 2
 
 const Resume = () => {
+
+    // Skills Grid Function
     const makeGrid = function (columns, skillArr) {
         let str = "<div class='ui relaxed stackable rounded grid'>"
         for (let n = 0; n < skillArr.length; n++) {
@@ -27,6 +29,7 @@ const Resume = () => {
         return ReactHtmlParser([str])
     }
 
+    // Experience Display
     const parseExperience = function (experience) {
         const display = experience.map(job => {
             const bullets = job.bullets.map(bullet => (
@@ -45,6 +48,7 @@ const Resume = () => {
         return display;
     }
 
+    // Project strings
     const project1 = "Worked with a team of 7 in Lambda Labs, a 16-week project developed with a ReactJS front-end, NodeJS/Express server, and PostgreSQL/Knex database. We utilized Notion to organize our Product Vision Document, and Trello to manage our daily and weekly goals."
     const project2 = "Check out my "
 
