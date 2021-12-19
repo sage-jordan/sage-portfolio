@@ -35,7 +35,7 @@ const Featured = () => {
 
             {/* Mobile */}
             < Responsive maxWidth={768} >
-                <Segment color='teal'>
+                <Segment color='teal' id='top-margin'>
                     <Header as='h2' color='teal'>
                         Featured Projects
                     </Header>

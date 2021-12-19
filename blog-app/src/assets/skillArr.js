@@ -1,5 +1,5 @@
 const skillArr = [
-    "Python",
+    "GitHub",
     "JavaScript",
     "ReactJS",
     "NodeJS",
@@ -16,7 +16,7 @@ const skillArr = [
     "Trello, Jira",
     "Docker",
     "BitBucket",
-    "GitHub",
+    "Python",
     "SalesForce",
     "Kafka"
 ];
