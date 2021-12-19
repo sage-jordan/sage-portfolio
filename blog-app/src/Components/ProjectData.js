@@ -1,23 +1,23 @@
 
-import React from 'react';
+import React from 'react'
 
-import sage from '../assets/proj/sage-jordan.png';
-import carSales from '../assets/proj/car-sales.png';
-import github from '../assets/proj/github-usercards.png';
-import shoppingCart from '../assets/proj/react-shopping-cart.png';
-import darkMode from '../assets/proj/dark-mode.png';
-import nasa from '../assets/proj/nasa-potd.png';
-import design from '../assets/proj/design_your_life.png';
-import property from '../assets/proj/property-manager.png';
-import bakery from '../assets/proj/sweet-eats-bakery.png';
-import scoreBoard from '../assets/proj/react-scoreboard.png';
-import insta from '../assets/proj/insta-clone.png';
+import sage from '../assets/proj/sage-jordan.png'
+import carSales from '../assets/proj/car-sales.png'
+import github from '../assets/proj/github-usercards.png'
+import shoppingCart from '../assets/proj/react-shopping-cart.png'
+import darkMode from '../assets/proj/dark-mode.png'
+import nasa from '../assets/proj/nasa-potd.png'
+import design from '../assets/proj/design_your_life.png'
+import property from '../assets/proj/property-manager.png'
+import bakery from '../assets/proj/sweet-eats-bakery.png'
+import scoreBoard from '../assets/proj/react-scoreboard.png'
+import insta from '../assets/proj/insta-clone.png'
 import conway from '../assets/proj/conways-game.png'
+import iterative from '../assets/proj/iterative-sorting.png'
 
 
 const ProjectData = [
     {
-        id: 1,
         featured: 1,
         image: conway,
         header: 'Conway\'s Game of Life',
@@ -26,34 +26,6 @@ const ProjectData = [
         extra: <a href='https://conways-game-of-life-sage.vercel.app/' target="_blank">conways-game-of-life-sage.vercel.app</a>
     },
     {
-        id: 2,
-        featured: 1,
-        image: sage,
-        header: 'Template Portfolio',
-        meta: <a href='https://github.com/sage-jordan/portfolio-website/tree/master' target="_blank">GitHub Repository</a>,
-        description: 'My previous portfolio was made as a project in Lambda School, where they showed us how to explore a template and incorporate and publish my own changes.',
-        extra: <a href='https://sage-jordan.now.sh' target="_blank">sage-jordan.now.sh</a>
-    },
-    {
-        id: 3,
-        featured: 0,
-        image: property,
-        header: 'Property Manager',
-        meta: <a href='https://github.com/Lambda-School-Labs/pt7-property-manager-be' target="_blank">GitHub Repository</a>,
-        description: 'Labs Project: I worked on back-end API development. We had a team of 6 for this 16 week-long greenfield project. Back-end Tech Stack: node, cross-env, bcryptjs, cors, dotenv, express, helmet, jsonwebtoken, knex, pg, sqlite3. npm.',
-        extra: <a href='https://property-manager-be.herokuapp.com/' target="_blank">property-manager-be.herokuapp.com</a>
-    },
-    {
-        id: 4,
-        image: design,
-        featured: 0,
-        header: 'Design Your Life',
-        meta: <a href='https://github.com/Design-YourLife/FE-design-YourLife' target="_blank">GitHub Repository</a>,
-        description: 'Build Week: Design Your Life prompt. Worked on a team of 5, using Reactjs, Moment, Axios, React-Router-Dom, and Bootstrap. Login/Register functionality. React app talks to backend; CRUD operations on "activities".',
-        extra: <a href='https://design-your-life.now.sh/' target="_blank">design-your-life.now.sh</a>
-    },
-    {
-        id: 5,
         image: nasa,
         featured: 1,
         header: 'NASA Astronomy Photo Of The Day',
@@ -62,7 +34,38 @@ const ProjectData = [
         extra: <a href='https://nasaphotooftheday.now.sh/' target="_blank">nasaphotooftheday.now.sh</a>
     },
     {
-        id: 6,
+        image: iterative,
+        featured: 1,
+        header: 'Iterative Sorting',
+        meta: <a href='https://github.com/sage-jordan/cs-module-project-iterative-sorting' target="_blank">GitHub Repository</a>,
+        description: 'Python Implementation of Selection Sort, Bubble Sort, Count Sort, Linear Search, Binary Search',
+        extra: null
+    },
+    {
+        featured: 1,
+        image: sage,
+        header: 'Template Portfolio',
+        meta: <a href='https://github.com/sage-jordan/portfolio-website/tree/master' target="_blank">GitHub Repository</a>,
+        description: 'My previous portfolio was made as a project in Lambda School, where they showed us how to explore a template and incorporate and publish my own changes.',
+        extra: <a href='https://sage-jordan.now.sh' target="_blank">sage-jordan.now.sh</a>
+    },
+    {
+        featured: 0,
+        image: property,
+        header: 'Property Manager',
+        meta: <a href='https://github.com/Lambda-School-Labs/pt7-property-manager-be' target="_blank">GitHub Repository</a>,
+        description: 'Labs Project: I worked on back-end API development. We had a team of 6 for this 16 week-long greenfield project. Back-end Tech Stack: node, cross-env, bcryptjs, cors, dotenv, express, helmet, jsonwebtoken, knex, pg, sqlite3. npm.',
+        extra: <a href='https://property-manager-be.herokuapp.com/' target="_blank">property-manager-be.herokuapp.com</a>
+    },
+    {
+        image: design,
+        featured: 0,
+        header: 'Design Your Life',
+        meta: <a href='https://github.com/Design-YourLife/FE-design-YourLife' target="_blank">GitHub Repository</a>,
+        description: 'Build Week: Design Your Life prompt. Worked on a team of 5, using Reactjs, Moment, Axios, React-Router-Dom, and Bootstrap. Login/Register functionality. React app talks to backend; CRUD operations on "activities".',
+        extra: <a href='https://design-your-life.now.sh/' target="_blank">design-your-life.now.sh</a>
+    },
+    {
         featured: 0,
         image: shoppingCart,
         header: 'Shopping Cart',
@@ -71,7 +74,6 @@ const ProjectData = [
         extra: <a href='https://react-shopping-cart-alpha.now.sh/' target="_blank">react-shopping-cart-alpha.now.sh</a>
     },
     {
-        id: 7,
         featured: 1,
         image: carSales,
         header: 'Car Sales',
@@ -80,7 +82,6 @@ const ProjectData = [
         extra: <a href='https://car-sales-omega.now.sh/' target="_blank">car-sales-omega.now.sh</a>
     },
     {
-        id: 8,
         featured: 0,
         image: bakery,
         header: 'Sweat Eats bakery',
@@ -88,7 +89,6 @@ const ProjectData = [
         description: 'Module Project: User Interface I. HTML markup and CSS styles.',
     },
     {
-        id: 9,
         featured: 0,
         image: github,
         header: 'Github UserCard',
@@ -97,7 +97,6 @@ const ProjectData = [
         extra: <a href='https://react-github-user-card-sagemjordan.vercel.app/' target="_blank">react-github-user-card-sagemjordan.vercel.app</a>
     },
     {
-        id: 10,
         featured: 0,
         image: darkMode,
         header: 'Dark Mode',
@@ -106,7 +105,6 @@ const ProjectData = [
         extra: <a href='https://dark-mode.sagemjordan.now.sh/' target="_blank">dark-mode.sagemjordan.now.sh</a>
     },
     {
-        id: 11,
         image: scoreBoard,
         featured: 0,
         header: 'American Football Scoreboard',
@@ -116,7 +114,6 @@ const ProjectData = [
 
     },
     {
-        id: 12,
         image: insta,
         featured: 0,
         header: 'Instagram Clone',
