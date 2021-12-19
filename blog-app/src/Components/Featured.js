@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Segment, Header, Card, Responsive } from 'semantic-ui-react';
+import { Segment, Header, Card, Responsive } from 'semantic-ui-react';
 import ProjectData from './ProjectData';
 
 const Featured = () => {
@@ -7,7 +7,7 @@ const Featured = () => {
 
         <div>
             {/* Desktop */}
-            < Responsive minWidth={768} >
+            <Responsive minWidth={768} >
                 <Segment color='teal' padded='very'>
                     <Header as='h2' color='teal'>
                         Featured Projects
@@ -34,7 +34,7 @@ const Featured = () => {
             </Responsive >
 
             {/* Mobile */}
-            < Responsive maxWidth={768} >
+            <Responsive maxWidth={768} >
                 <Segment color='teal' id='top-margin'>
                     <Header as='h2' color='teal'>
                         Featured Projects

@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Segment, Image, Grid, GridColumn, Header, Container, Responsive, Button, Icon } from 'semantic-ui-react';
-import Featured from './Featured';
 
 // Import Images
 import onlineResume from '../assets/teal/undraw_online_resume.png';
