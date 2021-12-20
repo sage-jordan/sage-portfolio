@@ -8,7 +8,7 @@ const Nav = () => {
         <Container>
             {/* Desktop */}
             <Responsive minWidth={768}>
-                <Segment color='teal' padded='very'>
+                <Segment color='' padded=' very'>
                     <Grid columns={2} stretched relaxed='very' stackable>
                         <Grid.Column>
                             <Header as='h2' color='teal'>
@@ -61,7 +61,7 @@ const Nav = () => {
 
             {/* Mobile */}
             <Responsive maxWidth={768}>
-                <Segment as='' color='teal'>
+                <Segment color=''>
                     <Grid columns={2} stretched relaxed='very' stackable>
                         <Grid.Column>
                             <Header as='h2' color='teal'>

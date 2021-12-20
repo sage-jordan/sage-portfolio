@@ -24,13 +24,13 @@ const HomeContent = () => {
         <div>
             {/* Desktop */}
             <Responsive minWidth={768} >
-                <Segment color='teal'>
+                <Segment color=''>
                     <Grid divided columns={2} stackable >
                         <GridColumn>
                             <Image src={onlineResume} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal' padded='very'>
+                            <Segment color='' padded='very'>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Welcome to my portfolio!
@@ -47,7 +47,7 @@ const HomeContent = () => {
                     </Grid>
                     <Grid divided columns={2} stackable>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal' padded='very'>
+                            <Segment color='' padded='very'>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
@@ -65,7 +65,7 @@ const HomeContent = () => {
                             <Image src={escaping} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal' padded='very'>
+                            <Segment color='' padded='very'>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Hobbies
@@ -80,13 +80,13 @@ const HomeContent = () => {
 
             {/* Mobile */}
             <Responsive maxWidth={768}>
-                <Segment color='teal' id='top-margin'>
+                <Segment color='' id='top-margin'>
                     <Grid divided columns={2} stackable >
                         <GridColumn>
                             <Image src={onlineResume} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal'>
+                            <Segment color=''>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Welcome to my portfolio!
@@ -101,7 +101,7 @@ const HomeContent = () => {
                             <Image src={journey} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal' >
+                            <Segment color='' >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
@@ -116,7 +116,7 @@ const HomeContent = () => {
                             <Image src={escaping} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='teal'>
+                            <Segment color=''>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Hobbies

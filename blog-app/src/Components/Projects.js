@@ -8,7 +8,7 @@ const Projects = () => {
 
             {/* Desktop */}
             <Responsive minWidth={768} >
-                <Segment color='teal' padded='very' >
+                <Segment color='' padded=' very' >
                     <Card.Group centered >
                         {ProjectData.map(({ image, header, meta, description, extra }) => {
                             return (
@@ -28,7 +28,7 @@ const Projects = () => {
 
             {/* Mobile */}
             <Responsive maxWidth={768} >
-                <Segment color='teal' id='top-margin'>
+                <Segment color='' id=' top-margin'>
                     <Card.Group centered >
                         {ProjectData.map(({ image, header, meta, description, extra }) => {
                             return (
@@ -44,7 +44,7 @@ const Projects = () => {
                         })}
                     </Card.Group>
                 </Segment>
-            </Responsive>
+            </Responsive >
         </Container >
     )
 }

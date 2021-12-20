@@ -11,56 +11,60 @@ const Projects = () => {
 
             {/* Desktop */}
             <Responsive minWidth={768} >
-                <Segment color='teal'>
+                <Segment color=''>
                     <Header as='h2' color='teal'> Contact me </Header>
                     <p>
-                        <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'teal' }}>
                             <Image src={LinkedIn} size='mini' spaced />
                             LinkedIn
                         </a>
                     </p>
                     <p>
-                        <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'teal' }}>
                             <Image src={GitHub} size='mini' spaced />
                             Github
                         </a>
                     </p>
                     <p>
-                        <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{ color: 'black' }}>
-                            <Image src={Gmail} size='mini' spaced style={{ color: 'black' }} />
+                        <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{ color: 'teal' }}>
+                            <Image src={Gmail} size='mini' spaced style={{ color: 'teal' }} />
                             Email
                         </a>
                     </p>
                     <Image src={programmer} />
-                </Segment>
-            </Responsive>
+                </Segment >
+            </Responsive >
 
             {/* Mobile */}
-            <Responsive maxWidth={768} >
-                <Segment color='teal' id='top-margin'>
+            < Responsive maxWidth={768} >
+                <Segment color='' id='top-margin'>
                     <Header as='h2' color='teal'> Contact me </Header>
                     <p>
-                        <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'teal' }}>
                             <Image src={LinkedIn} size='mini' spaced />
                             LinkedIn
                         </a>
                     </p>
                     <p>
-                        <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'black' }}>
+                        <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'teal' }}>
                             <Image src={GitHub} size='mini' spaced />
                             Github
                         </a>
-                    </p>
+                    </p >
                     <p>
-                        <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{ color: 'black' }}>
-                            <Image src={Gmail} size='mini' spaced style={{ color: 'black' }} />
+                        <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{
+                            color: 'teal'
+                        }}>
+                            <Image src={Gmail} size='mini' spaced style={{
+                                color: 'teal'
+                            }} />
                             Email
                         </a>
-                    </p>
+                    </p >
                     <Image src={programmer} />
-                </Segment>
-            </Responsive>
-        </Container>
+                </Segment >
+            </Responsive >
+        </Container >
     )
 }
 

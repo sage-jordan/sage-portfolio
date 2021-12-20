@@ -8,7 +8,7 @@ const Featured = () => {
         <div>
             {/* Desktop */}
             <Responsive minWidth={768} >
-                <Segment color='teal' padded='very'>
+                <Segment color='' padded=' very'>
                     <Header as='h2' color='teal'>
                         Featured Projects
                     </Header>
@@ -35,7 +35,7 @@ const Featured = () => {
 
             {/* Mobile */}
             <Responsive maxWidth={768} >
-                <Segment color='teal' id='top-margin'>
+                <Segment color='' id=' top-margin'>
                     <Header as='h2' color='teal'>
                         Featured Projects
                     </Header>
