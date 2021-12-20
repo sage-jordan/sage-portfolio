@@ -58,7 +58,7 @@ const Resume = () => {
             {/* Desktop */}
             <Responsive minWidth={768}>
                 <Segment color='teal' padded='very'>
-                    <Grid columns={2} stretched relaxed='very' stackable>
+                    <Grid columns={2} relaxed='very' stackable>
 
                         {/* First Column */}
                         <Grid.Column>
@@ -85,6 +85,8 @@ const Resume = () => {
                                 Technical Skills
                             </Header>
                             {makeGrid(columns, skillData)}
+
+                            {/* Skills */}
                             <Header as='h2' color='teal'>
                                 Skills
                             </Header>
