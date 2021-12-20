@@ -91,7 +91,12 @@ const HomeContent = () => {
                                     <Header as='h2' color='teal'>
                                         Welcome to my portfolio!
                                     </Header>
-                                    <p>{welcome}</p>
+                                    <p>{welcome}
+                                        <Button compact basic color='teal' size='mini' as={Link} to="/resume">
+                                            <Icon name='address card outline' />
+                                            Resume
+                                        </Button>
+                                    </p>
                                 </Container>
                             </Segment>
                         </GridColumn>
