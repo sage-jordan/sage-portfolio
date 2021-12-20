@@ -1,4 +1,3 @@
-
 import React from 'react'
 
 import sage from '../assets/proj/sage-jordan.png'
@@ -22,7 +21,7 @@ const ProjectData = [
         image: conway,
         header: 'Conway\'s Game of Life',
         meta: <a href='https://github.com/sage-jordan/Conways-Game-of-Life' target="_blank">GitHub Repository</a>,
-        description: 'My previous portfolio was made as a project in Lambda School, where they showed us how to explore a template and incorporate and publish my own changes.',
+        description: 'Computer Science Build Week: Cellular Automata and Conway\'s \"Game of Life\". Welcome to John Conway\'s \"Game of Life\"! This is a computer science classic from 1970, a program that simulates a cellular automaton (plural automata). It has connections to all kinds of different aspects of computer science and nature.',
         extra: <a href='https://conways-game-of-life-sage.vercel.app/' target="_blank">conways-game-of-life-sage.vercel.app</a>
     },
     {
@@ -38,7 +37,7 @@ const ProjectData = [
         featured: 1,
         header: 'Iterative Sorting',
         meta: <a href='https://github.com/sage-jordan/cs-module-project-iterative-sorting' target="_blank">GitHub Repository</a>,
-        description: 'Python Implementation of Selection Sort, Bubble Sort, Count Sort, Linear Search, Binary Search',
+        description: 'Module Project: Iterative Sorting. Python Implementation of selection sort, bubble sort, count sort, linear search, binary search.',
         extra: null
     },
     {
