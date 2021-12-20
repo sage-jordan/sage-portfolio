@@ -4,7 +4,11 @@ const experienceData = [
         dates: 'Aug. 2020 - Sept. 2021',
         bullets: [
             'Develop remotely with an agile team to debug, create, and test production-level code',
-            'Program with a user-first mentality',
+            'Work closely with leadership and design teams to craft amazing user-first products that satisfies stakeholders',
+            'Work closely with customer service to debug, plan, and collaborate to understand what the users want/need/expect of the end product',
+            'Write detailed developer-facing and customer-facing documentation',
+            'Plan and implement caching with Redis',
+            'Conducted asterisk dialplan updates, previously written in PHP, to use NodeJS, Kafka, & fastAGI'
         ]
     },
     {
