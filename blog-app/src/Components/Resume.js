@@ -5,29 +5,10 @@ import GitHub from '../assets/icons/GitHub-Mark.png'
 import LinkedIn from '../assets/icons/LinkedIn.png'
 import Gmail from '../assets/icons/Gmail.png'
 import img from '../assets/teal/undraw_weather.png'
-import skillData from '../assets/skillArr'
-import ReactHtmlParser from 'react-html-parser'
 import experienceData from '../assets/experience.js'
-const columns = 2
+import resume from '../assets/resume.pdf'
 
 const Resume = () => {
-
-    // Skills Grid Function
-    const makeGrid = function (columns, skillArr) {
-        let str = "<div class='ui relaxed stackable rounded grid'>"
-        for (let n = 0; n < skillArr.length; n++) {
-            if ((n + 1) === skillArr.length) {
-                str += `<div class='ui column teal'>${skillArr[n]}</div></div></div>`
-            } else if (n === 0 || !(n % columns)) {
-                str += `<div class='two column row'><div class='ui column'>${skillArr[n]}</div>`
-            } else if (!((n + 1) % columns)) {
-                str += `<div class='ui column teal'>${skillArr[n]}</div></div>`
-            } else {
-                str += `<div class='ui column teal'>${skillArr[n]}</div>`
-            }
-        }
-        return ReactHtmlParser([str])
-    }
 
     // Experience Display
     const parseExperience = function (experience) {
@@ -84,7 +65,88 @@ const Resume = () => {
                             <Header as='h2' color='teal'>
                                 Technical Skills
                             </Header>
-                            {makeGrid(columns, skillData)}
+                            <Segment textAlign='left'>
+                                <p><strong>Languages:</strong> JavaScript, PHP, Python, HTML, CSS </p>
+                                <p><strong>Libraries:</strong> Reactjs, Nodejs, Redux, JQuery, Axios, SCSS, LESS</p>
+                                <p><strong>Databases:</strong> MySQL, PostgreSQL, Redis, MongoDB</p>
+                                <p><strong>Version Control:</strong> GitHub, BitBucket</p>
+                                <p><strong>Other Tools:</strong> Trello, Jira, Notion, Kafka, DataDog</p>
+                            </Segment>
+                            {/* {makeGrid(columns, skillData)} */}
+
+                            {/* Education */}
+                            <Header as='h2' color='teal'>
+                                Education
+                            </Header>
+                            <Segment color='' textAlign='left'>
+                                <Header as='h3' color='teal' textAlign='center'>
+                                    Full Stack Web Development
+                                </Header>
+                                <Header as='h5' textAlign='center'>Lambda School is a 9+ month Computer Science & Software Engineering Academy that provides an immersive hands-on curriculum</Header>
+                                <Header as='h5' textAlign='center'>Aug. 2019 - Aug. 2020</Header>
+                                <p><Icon name='star' color='teal' />Approached coding challenges using pair programming</p>
+                                <p><Icon name='star' color='teal' />Utilized agile software development and Git workflow on all module projects and sprint challenges</p>
+                                <p><Icon name='star' color='teal' />Gained hands-on experience with client and server hosting, routing, and testing</p>
+                                <p><Icon name='star' color='teal' />Designed original user experiences across a range of web and mobile platforms, from ideation, to wireframing, to final production</p>
+                            </Segment>
+
+                            {/* Contact Info */}
+                            <Header as='h2' color='teal'>
+                                Contact Info
+                            </Header>
+                            <Segment color='' textAlign='center'>
+                                <Grid textAlign='left' columns={2}>
+                                    <GridColumn>
+                                        <p>
+                                            <a href="https://sage-portfolio.now.sh/" target="_blank" rel="noopener noreferrer" style={{
+                                                color: 'teal'
+                                            }}>
+                                                <Image src={img} size='mini' spaced />
+                                                Portfolio
+                                            </a>
+                                        </p>
+                                        <p>
+                                            <a href="https://github.com/sage-jordan" target="_blank" rel="noopener noreferrer" style={{
+                                                color: 'teal'
+                                            }}>
+                                                <Image src={GitHub} size='mini' spaced />
+                                                Github
+                                            </a>
+                                        </p>
+                                    </GridColumn>
+                                    <GridColumn>
+                                        <p>
+                                            <a href="mailto:sagemjordan@gmail.com" target="_blank" rel="noopener noreferrer" style={{
+                                                color: 'teal'
+                                            }}>
+                                                <Image src={Gmail} size='mini' spaced />
+                                                Email
+                                            </a>
+                                        </p>
+                                        <p>
+                                            <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" rel="noopener noreferrer" style={{
+                                                color: 'teal'
+                                            }}>
+                                                <Image src={LinkedIn} size='mini' spaced />
+                                                LinkedIn
+                                            </a>
+                                        </p>
+                                    </GridColumn>
+                                </Grid>
+                            </Segment>
+
+                            {/* Download  */}
+                            <Segment>
+                                <Header as='h2' color='teal'>Download Resume</Header>
+                                <Button basic color='teal' href={resume} download>
+                                    <Icon name='code' />
+                                    Sage's Resume
+                                </Button>
+                            </Segment>
+                        </Grid.Column>
+
+                        {/* Second Column */}
+                        <Grid.Column verticalAlign='middle'>
 
                             {/* Skills */}
                             <Header as='h2' color='teal'>
@@ -102,71 +164,6 @@ const Resume = () => {
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />SCRUM</Segment>
                                 </Grid.Column>
                             </Grid>
-
-                            {/* Contact Info */}
-                            <Header as='h2' color='teal'>
-                                Contact Info
-                            </Header>
-                            <Segment color='' textAlign='center'>
-                                <Grid textAlign='left' columns={2}>
-                                    <GridColumn>
-                                        <p>
-                                            <a href="https://sage-portfolio.now.sh/" target="_blank" style={{
-                                                color: 'teal'
-                                            }}>
-                                                <Image src={img} size='mini' spaced />
-                                                Portfolio
-                                            </a>
-                                        </p>
-                                        <p>
-                                            <a href="https://github.com/sage-jordan" target="_blank" style={{
-                                                color: 'teal'
-                                            }}>
-                                                <Image src={GitHub} size='mini' spaced />
-                                                Github
-                                            </a>
-                                        </p>
-                                    </GridColumn>
-                                    <GridColumn>
-                                        <p>
-                                            <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{
-                                                color: 'teal'
-                                            }}>
-                                                <Image src={Gmail} size='mini' spaced />
-                                                Email
-                                            </a>
-                                        </p>
-                                        <p>
-                                            <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{
-                                                color: 'teal'
-                                            }}>
-                                                <Image src={LinkedIn} size='mini' spaced />
-                                                LinkedIn
-                                            </a>
-                                        </p>
-                                    </GridColumn>
-                                </Grid>
-                            </Segment>
-                        </Grid.Column>
-
-                        {/* Second Column */}
-                        <Grid.Column verticalAlign='middle'>
-
-                            {/* Education */}
-                            <Header as='h2' color='teal'>
-                                Education
-                            </Header>
-                            <Segment color='' textAlign='left'>
-                                <Header as='h3' color='teal' textAlign='center'>
-                                    Full Stack Web Development
-                                </Header>
-                                <Header as='h5' textAlign='center'>Lambda School is a 9+ month Computer Science & Software Engineering Academy that provides an immersive hands-on curriculum</Header>
-                                <Header as='h5' textAlign='center'>Aug. 2019 - Aug. 2020</Header>
-                                <p><Icon name='star' color='teal' />Approached coding challenges using pair programming</p>
-                                <p><Icon name='star' color='teal' />Utilized agile software development and Git workflow on all module projects and sprint challenges</p>
-                                <p><Icon name='star' color='teal' />Gained hands-on experience with client and server hosting, routing, and testing</p>
-                                <p><Icon name='star' color='teal' />Designed original user experiences across a range of web and mobile platforms, from ideation, to wireframing, to final production</p>
-                            </Segment>
 
                             {/* Experience */}
                             <Header as='h2' color='teal'>Experience</Header>
@@ -187,6 +184,7 @@ const Resume = () => {
                             </Segment>
                         </Grid.Column>
                     </Grid >
+
                     <Responsive as={Divider} vertical minWidth={768}>
                         <Icon name='snowflake' color='teal' />
                     </Responsive>
@@ -220,7 +218,14 @@ const Resume = () => {
                     <Header as='h2' color='teal'>
                         Technical Skills
                     </Header>
-                    {makeGrid(columns, skillData)}
+                    <Segment textAlign='left'>
+                        <p><strong>Languages:</strong> JavaScript, PHP, Python, HTML, CSS </p>
+                        <p><strong>Libraries:</strong> Reactjs, Nodejs, Redux, JQuery, Axios, SCSS, LESS</p>
+                        <p><strong>Databases:</strong> MySQL, PostgreSQL, Redis, MongoDB</p>
+                        <p><strong>Version Control:</strong> GitHub, BitBucket</p>
+                        <p><strong>Other Tools:</strong> Trello, Jira, Notion, Kafka, DataDog</p>
+                    </Segment>
+                    {/* {makeGrid(columns, skillData)} */}
                 </Segment >
 
                 {/* Skills */}
@@ -286,13 +291,13 @@ const Resume = () => {
                         <Grid textAlign='left' columns={2}>
                             <GridColumn>
                                 <p>
-                                    <a href="https://sage-portfolio.now.sh/" target="_blank" style={{ color: 'teal' }}>
+                                    <a href="https://sage-portfolio.now.sh/" target="_blank" rel="noopener noreferrer" style={{ color: 'teal' }}>
                                         <Image src={img} size='mini' spaced />
                                         Portfolio
                                     </a>
                                 </p>
                                 <p>
-                                    <a href="https://github.com/sage-jordan" target="_blank" style={{ color: 'teal' }}>
+                                    <a href="https://github.com/sage-jordan" target="_blank" rel="noopener noreferrer" style={{ color: 'teal' }}>
                                         <Image src={GitHub} size='mini' spaced />
                                         Github
                                     </a>
@@ -300,13 +305,13 @@ const Resume = () => {
                             </GridColumn>
                             <GridColumn>
                                 <p>
-                                    <a href="mailto:sagemjordan@gmail.com" target="_blank" style={{ color: 'teal' }}>
+                                    <a href="mailto:sagemjordan@gmail.com" target="_blank" rel="noopener noreferrer" style={{ color: 'teal' }}>
                                         <Image src={Gmail} size='mini' spaced />
                                         Email
                                     </a>
                                 </p>
                                 <p>
-                                    <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" style={{ color: 'teal' }}>
+                                    <a href="https://www.linkedin.com/in/sage-jordan" target="_blank" rel="noopener noreferrer" style={{ color: 'teal' }}>
                                         <Image src={LinkedIn} size='mini' spaced />
                                         LinkedIn
                                     </a>
@@ -315,6 +320,15 @@ const Resume = () => {
                         </Grid >
                     </Segment >
                 </Segment >
+
+                {/* Download  */}
+                <Segment>
+                    <Header as='h2' color='teal'>Download Resume</Header>
+                    <Button basic color='teal' href={resume} download>
+                        <Icon name='code' />
+                        Sage's Resume
+                    </Button>
+                </Segment>
             </Responsive >
         </Container >
     )

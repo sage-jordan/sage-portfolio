@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Segment, Card, Responsive } from 'semantic-ui-react';
-import ProjectData from './ProjectData';
+import ProjectData from '../assets/ProjectData.js';
 
 const Projects = () => {
     return (

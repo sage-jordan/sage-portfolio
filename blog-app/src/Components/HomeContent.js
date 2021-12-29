@@ -10,15 +10,11 @@ import escaping from '../assets/teal/undraw_escaping.png';
 
 
 const HomeContent = () => {
-    const welcome = "This is a React Application, styled with Semantic-UI. Computers have always fascinated and challenged me. Learning\
-    how to program has been the most fulfilling career choice! To learn more about the languages I know or am learning,\
-    please navigate over to my "
+    const welcome = "This is a React Application, styled with Semantic-UI. Computers have always fascinated and challenged me. Learning how to program has been the most fulfilling career choice! To learn more about the languages I know or am learning, please navigate over to my "
 
-    const myJourney = "I grew up in California where I lived with lots of family. We moved through lots of cities, but Huntington Beach was the one I\
-    came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX."
+    const myJourney = "I grew up in California where I lived with lots of family. We moved through lots of cities, but Huntington Beach was the one I  came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX."
 
-    const hobbies = "In my free time I enjoy physical health, exploring new coding tools and ideas, video games, and philosophy. I value integrity,\
-    growth mindset, and kindness."
+    const hobbies = "In my free time I enjoy physical health, exploring new coding tools and ideas, video games, and philosophy. I value integrity, growth mindset, and kindness."
 
     return (
         <div>
