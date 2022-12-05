@@ -10,11 +10,11 @@ import escaping from '../assets/teal/undraw_escaping.png';
 
 
 const HomeContent = () => {
-    const welcome = "This is a React Application, styled with Semantic-UI. Computers have always fascinated and challenged me. Learning how to program has been the most fulfilling career choice! To learn more about the languages I know or am learning, please navigate over to my "
+    const welcome = "This is a React Application, styled with Semantic-UI. Learning is my biggest passion, and the tech industry empowers and challenges me to do just that. Learning how to program has been very fulfilling, and has lead me to discover my passion for technical writing! To know more about what I'm learning, please navigate over to my "
 
-    const myJourney = "I grew up in California where I lived with lots of family. We moved through lots of cities, but Huntington Beach was the one I  came to call home. One of the biggest decisions of my life was to move out of state, and I'm currently residing in Houston, TX."
+    const myJourney = "I grew up with a big family in California. We moved throughout Orange County, but Huntington Beach became the city I call my hometown. One of the best decisions of my life was to move out of state, and I'm currently living in Tucson, AZ."
 
-    const hobbies = "In my free time I enjoy physical health, exploring new coding tools and ideas, video games, and philosophy. I value integrity, growth mindset, and kindness."
+    const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness. To learn more about me, visit my "
 
     return (
         <div>
@@ -66,7 +66,12 @@ const HomeContent = () => {
                                     <Header as='h2' color='teal'>
                                         Hobbies
                                     </Header>
-                                    <p>{hobbies}</p>
+                                    <p>{hobbies}
+                                        <Button compact basic color='teal' size='mini' as={Link} to={{ pathname: "https://tackle.atlassian.net/wiki/spaces/sage/pages/555057932/Sage+s+Readme?atlOrigin=eyJpIjoiNzg1ZjM1ODY5NDRkNGVjMWE3N2EyOGIyMmFlYTU4ZDciLCJwIjoiYyJ9" }} target="_blank">
+                                            <Icon name='address card outline' />
+                                            ReadMe
+                                        </Button>
+                                    </p>
                                 </Container>
                             </Segment>
                         </GridColumn>
