@@ -53,12 +53,12 @@ const Resume = () => {
                             </Responsive>
                             <Segment color=''>
                                 <Header as='h5' textAlign='center'>
-                                    Full Stack Engineer
+                                    Full Stack Engineer | Technical Writer
                                 </Header>
                                 <Divider color='teal' />
-                                Efficient and detail-oriented problem solver located in Houston, TX.
-                                I thrive in a fast paced environment, which encourages me to challenge myself.
-                                I put care into every commit, prioritize user experience, and take pride in completed documentation.
+                                Efficient and growth oriented problem solver with 3+ years of agile software development experience. 
+                                I prioritize challenging myself to learn and take ownership. 
+                                I take pride in precise documentation, and am not afraid to ask for help or feedback.
                             </Segment>
 
                             {/* Technical Skills */}
@@ -66,11 +66,11 @@ const Resume = () => {
                                 Technical Skills
                             </Header>
                             <Segment textAlign='left'>
-                                <p><strong>Languages:</strong> JavaScript, PHP, Python, HTML, CSS </p>
-                                <p><strong>Libraries:</strong> Reactjs, Nodejs, Redux, JQuery, Axios, SCSS, LESS</p>
-                                <p><strong>Databases:</strong> MySQL, PostgreSQL, Redis, MongoDB</p>
-                                <p><strong>Version Control:</strong> GitHub, BitBucket</p>
-                                <p><strong>Other Tools:</strong> Trello, Jira, Notion, Kafka, DataDog</p>
+                                <p><strong>Languages:</strong> JS, TS, Golang, PHP, Python, HTML, CSS</p>
+                                <p><strong>Libraries:</strong> ReactJS, NodeJS, Redux, JQuery, Axios, SCSS, LESS</p>
+                                <p><strong>Databases:</strong> MySQL, PostgreSQL, Redis, MongoDB, DynamoDB</p>
+                                <p><strong>Documentation:</strong> Confluence, Notion, Postman</p>
+                                <p><strong>Other Tools:</strong> DataDog, Jira, Trello, Kafka</p>
                             </Segment>
                             {/* {makeGrid(columns, skillData)} */}
 
@@ -156,12 +156,14 @@ const Resume = () => {
                                 <Grid.Column>
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />Agile Methodology</Segment>
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
-                                    <Segment color='' textAlign='left'><Icon name='star' color='teal' />Documentation Reporting</Segment>
+                                    <Segment color='' textAlign='left'><Icon name='star' color='teal' />Technical Writing</Segment>
+                                    <Segment color='' textAlign='left'><Icon name='star' color='teal' />Conflict Resolution</Segment>
                                 </Grid.Column>
                                 <Grid.Column>
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />Remote work</Segment>
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />Project Management</Segment>
                                     <Segment color='' textAlign='left'><Icon name='star' color='teal' />SCRUM</Segment>
+                                    <Segment color='' textAlign='left'><Icon name='star' color='teal' />End-to-end testing</Segment>
                                 </Grid.Column>
                             </Grid>
 

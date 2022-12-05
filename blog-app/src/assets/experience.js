@@ -1,14 +1,21 @@
 const experienceData = [
     {
+        headline: 'Software Engineer at Tackle',
+        dates: '',
+        bullets: [
+            "Collaborated to create Azure Auto-Create feature, integrating with Azure’s API enabling ISVs to create marketplace offers within Tackle",
+            "Contributed to the formation and upkeep of Tackle’s Documentation Guild",
+            "Used Motivosity and praise to encourage a culture of documentation",
+            "Frequently monitored developer documentation, updating or delegating when necessary, resulting in up-to-date and relevant information",
+            "Used 20% of my time to continue learning topics such as Golang, technical writing, software architecture, and presentation skills"
+        ]
+    },
+    {
         headline: 'Software Engineer II at Sharpen',
         dates: 'Aug. 2020 - Sept. 2021',
         bullets: [
-            'Develop remotely with an agile team to debug, create, and test production-level code',
-            'Work closely with leadership and design teams to craft amazing user-first products that satisfies stakeholders',
-            'Work closely with customer service to debug, plan, and collaborate to understand what the users want/need/expect of the end product',
-            'Write detailed developer-facing and customer-facing documentation',
-            'Plan and implement caching with Redis',
-            'Conducted asterisk dialplan updates, previously written in PHP, to use NodeJS, Kafka, & fastAGI'
+            'Created NodeJS microservices to systematically replace functionality in the existing PHP codebase',
+            'Learned the basics of DevOps (continuous integration techniques), and SRE (site reliability engineer) responsibilities'
         ]
     },
     {
