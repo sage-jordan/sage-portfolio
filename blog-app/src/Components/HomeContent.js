@@ -26,7 +26,7 @@ const HomeContent = () => {
                             <Image src={onlineResume} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded>
+                            <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Welcome to Sage's portfolio!
@@ -43,7 +43,7 @@ const HomeContent = () => {
                     </Grid>
                     <Grid divided columns={2} stackable>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded>
+                            <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
@@ -61,7 +61,7 @@ const HomeContent = () => {
                             <Image src={escaping} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded>
+                            <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Hobbies
