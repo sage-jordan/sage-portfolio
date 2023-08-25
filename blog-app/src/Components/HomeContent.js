@@ -20,7 +20,7 @@ const HomeContent = () => {
         <div>
             {/* Desktop */}
             <Responsive minWidth={768} >
-                <Segment color=''>
+                <Segment >
                     <Grid divided columns={2} stackable >
                         <GridColumn>
                             <Image src={onlineResume} />
@@ -81,13 +81,13 @@ const HomeContent = () => {
 
             {/* Mobile */}
             <Responsive maxWidth={768}>
-                <Segment color='' id='top-margin'>
+                <Segment  id='top-margin'>
                     <Grid divided columns={2} stackable >
                         <GridColumn>
                             <Image src={onlineResume} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color=''>
+                            <Segment >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Welcome to my portfolio!
@@ -107,7 +107,7 @@ const HomeContent = () => {
                             <Image src={journey} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' >
+                            <Segment  >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
@@ -122,7 +122,7 @@ const HomeContent = () => {
                             <Image src={escaping} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color=''>
+                            <Segment >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Hobbies
