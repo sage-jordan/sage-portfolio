@@ -10,9 +10,9 @@ import escaping from '../assets/teal/undraw_escaping.png';
 
 
 const HomeContent = () => {
-    const welcome = "This is a React Application, styled with Semantic-UI. Learning is my biggest passion, and the tech industry empowers and challenges me to do just that. Learning how to program has been very fulfilling, and has lead me to discover my passion for technical writing! To know more about what I'm learning, please navigate over to my "
+    const welcome = "This is a ReactJS Application, styled with Semantic-UI. Growth is my passion; the tech industry empowers and challenges me to do that. At Lambda School I learned to solve problems, and make meaningful contributions to an agile team. To know more about what I'm learning, please navigate over to my "
 
-    const myJourney = "I grew up with a big family in California. We moved throughout Orange County, but Huntington Beach became the city I call my hometown. One of the best decisions of my life was to move out of state, and I'm currently living in Tucson, AZ."
+    const myJourney = "I grew up with a big family in California. We moved throughout Orange County, but Huntington Beach is my hometown. I live in Corona, CA."
 
     const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness. To learn more about me, visit my "
 
