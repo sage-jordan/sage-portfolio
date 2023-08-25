@@ -14,10 +14,10 @@ const HomeContent = () => {
     const welcome = "This is a ReactJS Application, styled with Semantic-UI. Growth is my passion; the tech industry empowers and challenges me to do just that. At Lambda School I learned to solve problems, and make meaningful contributions to an agile team. To know more about what I'm learning, please navigate over to my "
 
     const myJourneyHeader = 'This is my journey'
-    const myJourney = "I grew up with a big family in California. We moved throughout Orange County, but Huntington Beach is my hometown. I live in Corona, CA."
+    const myJourney = "I grew up with a big family in California. After high school I attended Lambda School, an online technical school, while working as a Gaucha (meat server) at a Brazilian Steak house."
 
     const hobbiesHeader = 'Hobbies'
-    const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness. To learn more about me, visit my "
+    const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness."
 
     return (
         <div>
@@ -69,12 +69,7 @@ const HomeContent = () => {
                                     <Header as='h2' color='teal'>
                                         {hobbiesHeader}
                                     </Header>
-                                    <p>{hobbies}
-                                            <Button compact basic color='teal' size='mini' as={Link} to="/contact">
-                                            <Icon name='address card outline' />
-                                            Contact
-                                        </Button>
-                                    </p>
+                                    <p>{hobbies}</p>
                                 </Container>
                             </Segment>
                         </GridColumn>
