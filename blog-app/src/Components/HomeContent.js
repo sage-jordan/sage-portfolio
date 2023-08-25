@@ -10,10 +10,13 @@ import escaping from '../assets/teal/undraw_escaping.png';
 
 
 const HomeContent = () => {
-    const welcome = "This is a ReactJS Application, styled with Semantic-UI. Growth is my passion; the tech industry empowers and challenges me to do that. At Lambda School I learned to solve problems, and make meaningful contributions to an agile team. To know more about what I'm learning, please navigate over to my "
+    const welcomeHeader = "Welcome to Sage's portfolio!"
+    const welcome = "This is a ReactJS Application, styled with Semantic-UI. Growth is my passion; the tech industry empowers and challenges me to do just that. At Lambda School I learned to solve problems, and make meaningful contributions to an agile team. To know more about what I'm learning, please navigate over to my "
 
+    const myJourneyHeader = 'This is my journey'
     const myJourney = "I grew up with a big family in California. We moved throughout Orange County, but Huntington Beach is my hometown. I live in Corona, CA."
 
+    const hobbiesHeader = 'Hobbies'
     const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness. To learn more about me, visit my "
 
     return (
@@ -29,7 +32,7 @@ const HomeContent = () => {
                             <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        Welcome to Sage's portfolio!
+                                        {welcomeHeader}
                                     </Header>
                                     <p>{welcome}
                                         <Button compact basic color='teal' size='mini' as={Link} to="/resume">
@@ -46,7 +49,7 @@ const HomeContent = () => {
                             <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        This is my journey
+                                        {myJourneyHeader}
                                     </Header>
                                     <p>{myJourney}</p>
                                 </Container>
@@ -64,7 +67,7 @@ const HomeContent = () => {
                             <Segment padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        Hobbies
+                                        {hobbiesHeader}
                                     </Header>
                                     <p>{hobbies}
                                             <Button compact basic color='teal' size='mini' as={Link} to="/contact">
@@ -90,7 +93,7 @@ const HomeContent = () => {
                             <Segment >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        Welcome to my portfolio!
+                                        {welcomeHeader}
                                     </Header>
                                     <p>{welcome}
                                         <Button compact basic color='teal' size='mini' as={Link} to="/resume">
@@ -110,7 +113,7 @@ const HomeContent = () => {
                             <Segment  >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        This is my journey
+                                        {myJourneyHeader}
                                     </Header>
                                     <p>{myJourney}</p>
                                 </Container>
@@ -125,7 +128,7 @@ const HomeContent = () => {
                             <Segment >
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        Hobbies
+                                        {hobbiesHeader}
                                     </Header>
                                     <p>{hobbies}</p>
                                 </Container>
