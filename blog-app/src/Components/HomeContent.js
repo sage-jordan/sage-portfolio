@@ -26,10 +26,10 @@ const HomeContent = () => {
                             <Image src={onlineResume} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded='very'>
+                            <Segment color='' padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
-                                        Welcome to my portfolio!
+                                        Welcome to Sage's portfolio!
                                     </Header>
                                     <p>{welcome}
                                         <Button compact basic color='teal' size='mini' as={Link} to="/resume">
@@ -43,7 +43,7 @@ const HomeContent = () => {
                     </Grid>
                     <Grid divided columns={2} stackable>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded='very'>
+                            <Segment color='' padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         This is my journey
@@ -61,15 +61,15 @@ const HomeContent = () => {
                             <Image src={escaping} />
                         </GridColumn>
                         <GridColumn verticalAlign='middle'>
-                            <Segment color='' padded='very'>
+                            <Segment color='' padded>
                                 <Container textAlign="left">
                                     <Header as='h2' color='teal'>
                                         Hobbies
                                     </Header>
                                     <p>{hobbies}
-                                        <Button compact basic color='teal' size='mini' as={Link} to={{ pathname: "https://tackle.atlassian.net/wiki/spaces/sage/pages/555057932/Sage+s+Readme?atlOrigin=eyJpIjoiNzg1ZjM1ODY5NDRkNGVjMWE3N2EyOGIyMmFlYTU4ZDciLCJwIjoiYyJ9" }} target="_blank">
+                                            <Button compact basic color='teal' size='mini' as={Link} to="/contact">
                                             <Icon name='address card outline' />
-                                            ReadMe
+                                            Contact
                                         </Button>
                                     </p>
                                 </Container>
