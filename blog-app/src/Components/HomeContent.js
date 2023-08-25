@@ -69,7 +69,7 @@ const HomeContent = () => {
                                     <p>{hobbies}
                                             <Button compact basic color='teal' size='mini' as={Link} to="/contact">
                                             <Icon name='address card outline' />
-                                            Contact
+                                            Contact 
                                         </Button>
                                     </p>
                                 </Container>
