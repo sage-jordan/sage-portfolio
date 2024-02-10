@@ -5,8 +5,8 @@ import { Route } from 'react-router-dom';
 
 // Import Components
 import Nav from './Nav';
-import Resume from './Resume';
-import Home from './Home';
+import Resume from './Resume/Resume';
+import Home from './Home/Home';
 import Projects from './Projects';
 import Contact from './Contact';
 
