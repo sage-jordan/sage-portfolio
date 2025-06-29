@@ -11,10 +11,10 @@ import escaping from '../../assets/teal/undraw_escaping.png';
 
 const HomeContent = () => {
     const welcomeHeader = "Welcome to Sage's portfolio!"
-    const welcome = "This is a ReactJS Application, styled with Semantic-UI. Check out the code <a to='https://github.com/sage-jordan/sage-portfolio'>here</a>. Growth is my passion; the tech industry empowers and challenges me to do just that. At Lambda School I learned to solve problems, and make meaningful contributions to an agile team. To know more about what I'm learning, please navigate over to my "
+    const welcome = "This is a ReactJS Application, styled with Semantic-UI. Check out the code <a to='https://github.com/sage-jordan/sage-portfolio'>here</a>. I'm passionate about growth—as a developer and a person. The tech industry challenges me daily, and I love rising to meet those challenges. After mastering the fundamentals of web development at Lambda School, I’ve worked with multiple SaaS companies to optimize and expand their applications. </br> Want to know what I’ve been learning? Check out the projects below."
 
     const myJourneyHeader = 'This is my journey'
-    const myJourney = "I live with my big family in Southern California. After high school I attended Lambda School, an online technical school, while working as a Gaucha (meat server) at a Brazilian Steak house."
+    const myJourney = "I live with my big family in Southern California. After high school, I attended Lambda School (an online technical school) while working as a Gaucha—a meat server—at a Brazilian steakhouse. That experience taught me hard work, communication, and hustle—skills that serve me well in tech."
 
     const hobbiesHeader = 'Hobbies'
     const hobbies = "I enjoy yoga, hiking, video games, and philosophy. I value integrity, growth mindset, and kindness."
@@ -35,8 +35,18 @@ const HomeContent = () => {
                                         {welcomeHeader}
                                     </Header>
                                     <p className='largetext'>
-                                        This is a ReactJS Application, styled with Semantic-UI. Check out the code <a target="_blank" href='https://github.com/sage-jordan/sage-portfolio'>here</a>. Growth is my passion; the tech industry empowers and challenges me to do just that. After mastering the basics of Web Development at Lambda School, I have helped multiple SaaS companies to expand and optimize their application. To know more about what I'm learning, please navigate over to my <Button compact basic color='teal' size='mini' as={Link} to="/resume">
-                                            <Icon name='address card outline' />
+                                        This is a ReactJS Application, styled with Semantic-UI. 
+                                    </p>
+                                    <p className='largetext'>
+                                        Check out the code 
+                                        <a target="_blank" href='https://github.com/sage-jordan/sage-portfolio'> here</a>! 
+                                    </p>
+                                    <p className='largetext'>
+                                         I'm passionate about growth—as a developer and a person. The tech industry challenges me daily, and I love rising to meet those challenges. After mastering the fundamentals of web development at Lambda School, I've worked with multiple SaaS companies to optimize and expand their applications. 
+                                         <br/> <br/>
+                                         Want to know what I've been learning? Check out the projects below. To know more about what I'm learning, please navigate over to my { }
+                                        <Button compact basic color='teal' size='mini' as={Link} to="/resume">
+                                        <Icon name='address card outline' />
                                             Resume
                                         </Button>
                                     </p>
