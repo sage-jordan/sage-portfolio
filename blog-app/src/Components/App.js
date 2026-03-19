@@ -2,6 +2,7 @@
 import React from 'react';
 import '../App.css';
 import { Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 // Import Components
 import Nav from './Nav';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
       </header>
+      <Analytics />
     </div>
   );
 }
